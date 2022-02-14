@@ -1,4 +1,4 @@
-<div class="print:hidden h-14 flex items-center justify-around p-4 mb-10 mx-auto bg-gray-50 dark:text-white dark:bg-gray-700 shadow">
+<div class="print:hidden h-14 items-center max-w-[793px] flex items-center justify-between p-4 mb-10 mx-auto bg-gray-50 dark:text-white dark:bg-gray-700">
   <div class="flex space-x-2 cursor-pointer border-b-2 dark:border-gray-700 border-gray-50 item" (click)="printResume()">
     <fa-icon [icon]="print"></fa-icon>
     <div>
@@ -13,13 +13,13 @@
       </div>
     </div>
   </div>
-  <form class="flex justify-between items-center divide-x-2">
+  <div class="flex justify-between items-center divide-x-2">
     <div class="p-1" [ngClass]="{'filter grayscale': isGerman}" (click)="changeLanguage('en')">
       <img width="28" [ngClass]="{'cursor-pointer': isGerman}" src="assets/en.png" alt="english">
     </div>
     <div class="p-1" [ngClass]="{'filter grayscale':!isGerman}" (click)="changeLanguage('de')">
       <img width="28" [ngClass]="{'cursor-pointer': !isGerman}" src="assets/de.png" alt="german">
     </div>
-  </form>
+  </div>
 </div>
 

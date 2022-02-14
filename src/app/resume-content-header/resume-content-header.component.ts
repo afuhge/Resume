@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
-import { faBirthdayCake, faEnvelope, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBirthdayCake, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { ColorThemeService } from '../../services/color-theme.service';
 

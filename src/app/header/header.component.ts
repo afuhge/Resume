@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
 import { faLanguage, faMoon, faPrint, faSun } from '@fortawesome/free-solid-svg-icons';
 import { ColorThemeService } from '../../services/color-theme.service';
@@ -8,7 +8,7 @@ import { ColorThemeService } from '../../services/color-theme.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   print: IconDefinition = faPrint;
   sun: IconDefinition = faSun;
   language: IconDefinition = faLanguage;
@@ -26,8 +26,6 @@ export class HeaderComponent implements OnInit {
   }
  // todo: store theme in localstorage,
   //  select language needs reload and then selected theme should not reset
-  ngOnInit(): void {
-  }
 
   public printResume(): void {
     window.print();

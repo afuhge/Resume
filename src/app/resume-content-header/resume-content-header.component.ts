@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
 import { faBirthdayCake, faEnvelope, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { ColorThemeService } from '../../services/color-theme.service';
 
 @Component({
   selector: 'app-resume-content-header',
@@ -10,8 +11,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 })
 export class ResumeContentHeaderComponent {
   envelope: IconDefinition = faEnvelope;
-  home: IconDefinition = faHome;
-  phone: IconDefinition = faPhone;
   birthdayCake: IconDefinition = faBirthdayCake;
   github: IconDefinition = faGithub;
+
+  constructor(
+    public colorThemeService: ColorThemeService,
+  ) {}
 }

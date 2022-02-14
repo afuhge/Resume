@@ -1,5 +1,5 @@
 <div class="space-y-4">
-  <div class="title">
+  <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
           <span class="highlight py-2 px-4 font-semibold">
             Fähigkeiten
           </span>
@@ -20,8 +20,8 @@
         <div>Englisch</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 4, 'bg-lighter-cyan': i >= 4}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 4}">
           </div>
         </div>
       </div>
@@ -35,8 +35,8 @@
         <div>HTML/CSS</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 4, 'bg-lighter-cyan': i >= 4}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 4}">
           </div>
         </div>
       </div>
@@ -44,8 +44,8 @@
         <div>Typescript</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 4, 'bg-lighter-cyan': i >= 4}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 4}">
           </div>
         </div>
       </div>
@@ -53,8 +53,8 @@
         <div>Java</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 3, 'bg-lighter-cyan': i >= 3}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 3}">
           </div>
         </div>
       </div>
@@ -62,8 +62,8 @@
         <div>Xtend</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 3, 'bg-lighter-cyan': i >= 3}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 3}">
           </div>
         </div>
       </div>
@@ -78,8 +78,8 @@
         <div>Angular</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 3, 'bg-lighter-cyan': i >= 3}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 3}">
           </div>
         </div>
       </div>
@@ -87,8 +87,8 @@
         <div>AngularDart</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 2, 'bg-lighter-cyan': i >= 2}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 2}">
           </div>
         </div>
       </div>
@@ -96,8 +96,8 @@
         <div>tailwindcss</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 4, 'bg-lighter-cyan': i >= 4}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 4}">
           </div>
         </div>
       </div>
@@ -105,8 +105,8 @@
         <div>Bootstrap</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
-               class="w-4 h-4 rounded-md"
-               [ngClass]="{'primary-bg-color': i < 3, 'bg-lighter-cyan': i >= 3}">
+               class="w-4 h-4 rounded-md primary-bg-color"
+               [ngClass]="{'opacity-20': i >= 3}">
           </div>
         </div>
       </div>

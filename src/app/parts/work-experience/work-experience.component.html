@@ -1,5 +1,5 @@
 <div class="space-y-4">
-  <div class="title">
+  <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
           <span class="py-2 px-4 font-semibold">
             Berufserfahrung
           </span>
@@ -11,7 +11,7 @@
           <div>
             Parfümerie Douglas GmbH
           </div>
-          <fa-icon [icon]="link" class="text-gray-500"></fa-icon>
+          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
         <div>Mai 2021 - heute</div>
       </div>
@@ -40,7 +40,7 @@
           <div>
             TU Dortmund
           </div>
-          <fa-icon [icon]="link" class="text-gray-500"></fa-icon>
+          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
         <div>August 2020 - April 2021</div>
       </div>
@@ -72,7 +72,7 @@
           <div>
             TU Dortmund
           </div>
-          <fa-icon [icon]="link" class="text-gray-500"></fa-icon>
+          <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
         <div>Juni 2016 - Juli 2020</div>
       </div>

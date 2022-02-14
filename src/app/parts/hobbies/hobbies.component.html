@@ -1,22 +1,22 @@
 <div class="space-y-4 space-x-2">
-  <div class="title">
+  <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
           <span class="highlight py-2 px-4 font-semibold">
             Hobbies
           </span>
   </div>
 
-  <div class="flex flex-wrap space-x-6">
+  <div class="flex flex-wrap items-center space-x-6">
     <div>
-      <img width="32" src="assets/dancing.png" alt="dancing">
+      <img width="32" src="assets/dancing.png" class="filter dark:invert" alt="dancing">
     </div>
     <div>
-      <img  width="32" src="assets/ukulele.png" alt="ukulele">
+      <img  width="32" src="assets/ukulele.png" class="filter dark:invert" alt="ukulele">
     </div>
     <div>
-      <img  width="32" src="assets/programming.png" alt="programming">
+      <img  width="32" src="assets/programming.png" class="filter dark:invert" alt="programming">
     </div>
     <div>
-      <img  width="32" src="assets/walking.png" alt="walking">
+      <img  width="32" src="assets/walking.png" class="filter dark:invert" alt="walking">
     </div>
   </div>
 </div>

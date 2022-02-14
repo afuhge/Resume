@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ResumeContentContainerModule } from './resume-content-container/resume-content-container.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     ResumeContentContainerModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

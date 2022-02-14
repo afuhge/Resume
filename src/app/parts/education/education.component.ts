@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { ColorThemeService } from '../../../services/color-theme.service';
 
 @Component({
   selector: 'app-education',
@@ -9,5 +10,13 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 })
 export class EducationComponent {
   public link: IconDefinition = faExternalLinkAlt;
+  isDarkTheme: boolean;
+
+  constructor(private colorThemeService: ColorThemeService) {
+    this.colorThemeService.isDarkTheme$.subscribe((isDark: boolean) => {
+      this.isDarkTheme = isDark;
+      console.log(this.isDarkTheme);
+    });
+  }
 
 }

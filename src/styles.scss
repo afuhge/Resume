@@ -23,7 +23,7 @@ body {
 
 // #5f9ea0  008b8b
 body {
-  @apply bg-gray-200;
+  @apply bg-gray-200 dark:bg-gray-900;
 }
 
 .quote {
@@ -33,14 +33,14 @@ body {
 }
 
 .primary-bg-color {
-  background-color: darkcyan;
+  @apply bg-[#008B8BFF] dark:bg-teal-300;
 }
 .primary-text-color {
-  color: darkcyan;
+  @apply text-[#008B8BFF] dark:text-teal-300;
 }
 
-.bg-lighter-cyan {
-  background: rgba(0, 139, 139, 0.3);
+.item:hover {
+  @apply border-b-2 border-[#008B8BFF] dark:border-teal-300;
 }
 
 .skills {
@@ -51,11 +51,16 @@ body {
   background-color: rgba(0, 139, 139, 0.3);
   width: 10%;
   font-size: 20px;
-  text-transform: uppercase;
+}
+
+.title-dark {
+  background-color: rgba(94, 234, 212, 0.2);
+  width: 10%;
+  font-size: 20px;
 }
 
 .badge {
-  @apply px-2 py-px primary-bg-color font-semibold rounded-md;
+  @apply px-2 py-px primary-bg-color dark:text-gray-800 font-semibold rounded-md;
 }
 
 .subtitle {

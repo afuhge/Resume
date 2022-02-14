@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../node_modules/paper-css/paper.css";
+
+@page {
+  size: A4;
+}
+
+
+
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Indie Flower', cursive;
+ */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+// #5f9ea0  008b8b
+body {
+  @apply bg-gray-200;
+}
+
+.quote {
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
+  // font-family: 'Architects Daughter', cursive;
+}
+
+.primary-bg-color {
+  background-color: darkcyan;
+}
+.primary-text-color {
+  color: darkcyan;
+}
+
+.bg-lighter-cyan {
+  background: rgba(0, 139, 139, 0.3);
+}
+
+.skills {
+  @apply italic flex flex-wrap -m-0.5 primary-text-color;
+}
+
+.title {
+  background-color: rgba(0, 139, 139, 0.3);
+  width: 10%;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.badge {
+  @apply px-2 py-px primary-bg-color font-semibold rounded-md;
+}
+
+.subtitle {
+  @apply italic font-semibold;
+}
+
+::selection {
+  color: white;
+  background: cadetblue;
+}
+

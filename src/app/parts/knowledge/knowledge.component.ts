@@ -14,7 +14,6 @@ export class KnowledgeComponent {
     ) {
       this.colorThemeService.isDarkTheme$.subscribe((isDark: boolean) => {
         this.isDarkTheme = isDark;
-        console.log(this.isDarkTheme);
       });
     }
 }

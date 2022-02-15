@@ -15,7 +15,6 @@ export class EducationComponent {
   constructor(private colorThemeService: ColorThemeService) {
     this.colorThemeService.isDarkTheme$.subscribe((isDark: boolean) => {
       this.isDarkTheme = isDark;
-      console.log(this.isDarkTheme);
     });
   }
 

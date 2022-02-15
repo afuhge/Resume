@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KnowledgeComponent } from './knowledge.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -12,7 +13,8 @@ import { KnowledgeComponent } from './knowledge.component';
     KnowledgeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
   ]
 })
 export class KnowledgeModule { }

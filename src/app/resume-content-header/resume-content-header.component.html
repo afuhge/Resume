@@ -5,17 +5,16 @@
         <img class="rounded-full block border-2 border-white dark:border-gray-700 w-[96px] h-[96px]" src="../../assets/Fuhge.jpg">
       </div>
       <div class="font-semibold text-lg">
-        Annika Fuhge
+        {{ 'resume.header.name' | translate }}
       </div>
       <div class="text-lg tracking-wide">
-        Frontend Entwicklerin
+        {{ 'resume.header.title' | translate }}
       </div>
     </div>
 
     <div class="quote quotation-marks tracking-wider leading-relaxed col-span-4">
       <span [ngClass]="{'quote-content': (colorThemeService.isDarkTheme$ | async) === false,'quote-content-dark': (colorThemeService.isDarkTheme$ | async) === true}">
-       Ich liebe es kreativ zu sein, mich selbst zu organisieren, aber auch als Team zu agieren.
-      Mir ist meine persönliche Entwicklung besonders wichtig, sodass ich begeistert und motiviert an neue Dinge herangehe.
+      {{ 'resume.header.quote' | translate }}
       </span>
     </div>
   </div>

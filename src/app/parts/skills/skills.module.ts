@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SkillsComponent } from './skills.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -12,7 +13,8 @@ import { SkillsComponent } from './skills.component';
     SkillsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
   ]
 })
 export class SkillsModule { }

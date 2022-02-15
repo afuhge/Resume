@@ -1,7 +1,7 @@
 <div class="space-y-4">
   <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
           <span class="py-2 px-4 font-semibold">
-            Berufserfahrung
+            {{ 'resume.content.work-experience.headline' | translate }}
           </span>
   </div>
   <div class="space-y-4 divide-y">
@@ -9,14 +9,15 @@
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
         <a href="https://corporate.douglas.de/home/" target="_blank" class=" hover:font-semibold flex space-x-2 cursor-pointer">
           <div>
-            Parfümerie Douglas GmbH
+            {{ 'resume.content.work-experience.douglas.company' | translate }}
           </div>
           <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div>Mai 2021 - heute</div>
+        <div> {{ 'resume.content.work-experience.douglas.date' | translate }}</div>
       </div>
-      <div class="font-semibold">Junior Frontend Entwicklerin</div>
-      <div>Entwicklung und Weiterentwicklung von internationalen CRM Produkten wie Kassensysteme und Kundenmanagement.
+      <div class="font-semibold">{{ 'resume.content.work-experience.douglas.title' | translate }}</div>
+      <div>
+        {{ 'resume.content.work-experience.douglas.description' | translate }}
       </div>
       <div class="skills">
         <div class="p-1">
@@ -38,15 +39,14 @@
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
         <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:font-semibold flex space-x-2 cursor-pointer">
           <div>
-            TU Dortmund
+            {{ 'resume.content.work-experience.tu-dortmund-wimi.company' | translate }}
           </div>
           <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div>August 2020 - April 2021</div>
+        <div>  {{ 'resume.content.work-experience.tu-dortmund-wimi.date' | translate }}</div>
       </div>
-      <div class="font-semibold">Wissenschaftliche Mitarbeiterin</div>
-      <div>Entwicklung von DSLs inkl. Modeltransformation mit MPS,
-         Weiterentwicklung von bestehenden DSLs mit Fokus auf UI/UX.</div>
+      <div class="font-semibold">  {{ 'resume.content.work-experience.tu-dortmund-wimi.title' | translate }}</div>
+      <div>  {{ 'resume.content.work-experience.tu-dortmund-wimi.description' | translate }}</div>
       <div class="skills">
         <div class="p-1">
           #Java
@@ -70,14 +70,14 @@
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
         <a href="https://www.tu-dortmund.de/" target="_blank" class="hover:font-semibold flex space-x-2 cursor-pointer">
           <div>
-            TU Dortmund
+            {{ 'resume.content.work-experience.tu-dortmund.company' | translate }}
           </div>
           <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div>Juni 2016 - Juli 2020</div>
+        <div> {{ 'resume.content.work-experience.tu-dortmund.date' | translate }}</div>
       </div>
-      <div class="font-semibold">Studentische/Wissenschaftliche Hilfskraft</div>
-      <div>Weiterentwicklung von DSLs durch Views, Validierung oder nutzerfreundlichem Design.</div>
+      <div class="font-semibold">{{ 'resume.content.work-experience.tu-dortmund.title' | translate }}</div>
+      <div>{{ 'resume.content.work-experience.tu-dortmund.description' | translate }}</div>
       <div class="skills">
         <div class="p-1">
           #Java

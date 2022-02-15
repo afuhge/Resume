@@ -1,7 +1,7 @@
 <div class="space-y-4">
   <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
           <span class="highlight py-2 px-4 font-semibold">
-            Bildung
+             {{ 'resume.content.education.headline' | translate }}
           </span>
   </div>
 
@@ -10,15 +10,15 @@
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
         <a href="https://www.tu-dortmund.de/" target="_blank" class="flex space-x-2 cursor-pointer hover:font-semibold">
           <div>
-            TU Dortmund
+            {{ 'resume.content.education.master.company' | translate }}
           </div>
           <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div>April 2018 - Juli 2020</div>
+        <div> {{ 'resume.content.education.master.date' | translate }}</div>
       </div>
-      <div class="font-semibold">Master of Science in Informatik</div>
+      <div class="font-semibold"> {{ 'resume.content.education.master.title' | translate }}</div>
       <div>
-        LiveDocs: Document-Centric Process Management
+        {{ 'resume.content.education.master.description' | translate }}
       </div>
     </div>
 
@@ -26,15 +26,15 @@
       <div class="flex justify-between items-center text-xs"> <!-- where when -->
         <a href="https://www.tu-dortmund.de/" target="_blank" class=" hover:font-semibold flex space-x-2 cursor-pointer">
           <div>
-            TU Dortmund
+            {{ 'resume.content.education.bachelor.company' | translate }}
           </div>
           <fa-icon [icon]="link" class="text-gray-500 dark:text-gray-300"></fa-icon>
         </a>
-        <div>Oktober 2014 - Mai 2018</div>
+        <div>  {{ 'resume.content.education.bachelor.date' | translate }}</div>
       </div>
-      <div class="font-semibold">Bachelor of Science in Informatik</div>
+      <div class="font-semibold">  {{ 'resume.content.education.bachelor.title' | translate }}</div>
       <div>
-        Graphische Modellierung von Cinco Produktspezifikationen
+        {{ 'resume.content.education.bachelor.description' | translate }}
       </div>
     </div>
 

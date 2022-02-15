@@ -1,15 +1,15 @@
 <div class="space-y-4">
   <div [ngClass]="{'title-dark': isDarkTheme, 'title': !isDarkTheme}">
           <span class="highlight py-2 px-4 font-semibold">
-            Fähigkeiten
+              {{ 'resume.content.skills.headline' | translate }}
           </span>
   </div>
   <!-- languages -->
   <div class="space-y-2">
-    <div class="subtitle">Sprachen</div>
+    <div class="subtitle">{{ 'resume.content.skills.language.title' | translate }}</div>
     <div class="space-y-1">
       <div class="flex justify-between items-center">
-        <div>Deutsch</div>
+        <div>{{ 'resume.content.skills.language.german' | translate }}</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4]"
                class="primary-bg-color w-4 h-4 rounded-md">
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="flex justify-between items-center">
-        <div>Englisch</div>
+        <div>{{ 'resume.content.skills.language.english' | translate }}</div>
         <div class="flex space-x-2">
           <div *ngFor="let i of [0,1,2,3,4];"
                class="w-4 h-4 rounded-md primary-bg-color"
@@ -29,7 +29,7 @@
   </div>
   <!-- programmiersprachen -->
   <div class="space-y-2">
-    <div class="subtitle">Programmier-/Markupsprachen</div>
+    <div class="subtitle">{{ 'resume.content.skills.programming-languages.title' | translate }}</div>
     <div class="space-y-1">
       <div class="flex justify-between items-center">
         <div>HTML/CSS</div>

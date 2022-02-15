@@ -16,9 +16,10 @@ export class WorkExperienceComponent {
   ) {
     this.colorThemeService.isDarkTheme$.subscribe((isDark: boolean) => {
       this.isDarkTheme = isDark;
-      console.log(this.isDarkTheme);
     });
   }
+
+  // todo: work experience umbruch fixen
 
 
 }

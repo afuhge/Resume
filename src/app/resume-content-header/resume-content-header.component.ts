@@ -17,4 +17,6 @@ export class ResumeContentHeaderComponent {
   constructor(
     public colorThemeService: ColorThemeService,
   ) {}
+
+  // todo: quotation-marks bei en /de fixen
 }

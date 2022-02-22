@@ -11,7 +11,7 @@
     },
     "content": {
       "work-experience": {
-        "headline": "Work experience",
+        "headline": "Experience",
         "douglas": {
           "company": "Parfümerie Douglas GmbH",
           "title": "Junior Frontend Developer",
@@ -21,12 +21,12 @@
         "tu-dortmund-wimi": {
           "company": "TU Dortmund",
           "title": "Research Assistant",
-          "description": "Development of DSLs incl. model transformation with MPS, further development of existing DSLs with focus on UI/UX.",
+          "description": "Development of Domain Specific Languages (DSLs) incl. model transformation with MPS, further development of existing DSLs with focus on UI/UX.",
           "date": "August 2020 - April 2021"
         },
         "tu-dortmund": {
           "company": "TU Dortmund",
-          "title": "Student/scientific Assistant",
+          "title": "Student/Scientific Assistant",
           "description": "Further development of DSLs through views, validation, and user-friendly design.",
           "date": "June 2016 - July 2020"
         }

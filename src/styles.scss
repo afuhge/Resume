@@ -8,20 +8,11 @@
   size: A4;
 }
 
-
-
-/*
-font-family: 'Amatic SC', cursive;
-font-family: 'Architects Daughter', cursive;
-font-family: 'Indie Flower', cursive;
- */
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
 }
 
-// #5f9ea0  008b8b
 body {
   @apply bg-gray-200 dark:bg-gray-900;
 }
@@ -29,7 +20,6 @@ body {
 .quote {
   font-size: 18px;
   font-family: 'Indie Flower', cursive;
-  // font-family: 'Architects Daughter', cursive;
 }
 
 .primary-bg-color {
